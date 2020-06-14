@@ -37,26 +37,29 @@
     </div>
 
 
-    <header class="container col-11 mx-auto bg-light my-4">
+    <header class="container col-11 mx-auto bg-light my-3 shadow p-3 mb-5 bg-white rounded">
         <h1 class="mx-auto text-center">Menu</h1>
         <img class="d-none d-sm-block d-md-none d-block d-sm-none macaroons" src="../images/macaroons.jpg" alt="macaroons">
 
     </header>
 
 
-    <main class="container col-11 bg-light">
+    <main class="container col-11 bg-light shadow p-3 mb-3 bg-white rounded">
         <div class="row py-4">
             <div class='col' align='center'>
-                <button class="btn-lg btn-primary">Macarooons</button>
+                <button class="btn-lg btn-primary" data-toggle="collapse" href="#macaroonsCollapse" aria-expanded="false" aria-controls="macaroonsCollapse">Macarooons</button>
             </div>
             <div class='col' align='center'>
-                <button class="btn-lg btn-primary">Cakes</button>
+                <button class="btn-lg btn-primary" data-toggle="collapse" href="#cakesCollapse" aria-expanded="false" aria-controls="cakesCollapse">Cakes</button>
             </div>
             <div class='col' align='center'>
-                <button class="btn-lg btn-primary">Cookies</button>
+                <button class="btn-lg btn-primary" data-toggle="collapse" href="#cookiesCollapse" aria-expanded="false" aria-controls="cookiesCollapse"> Cookies</button>
             </div>
         </div>
-        <div class="row">
+
+
+        <!--Macaroons Menu-->
+        <div class="row collapse" id="macaroonsCollapse">
             <article class="col-md">
                 <h3> Macaroon x</h3>
                 <p class="description">this is text this is text this is text this is text this is text</p>
@@ -91,6 +94,92 @@
             </article>
             <article class="col-md">
                 <h3> Macaroon x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <div class="w-100"></div>
+        </div>
+
+        <!--Cakes Menu-->
+        <div class="row collapse" id="cakesCollapse" aria-expanded="false">
+            <article class="col-md">
+                <h3> Cake x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <article class="col-md">
+                <h3> Cake x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <article class="col-md">
+                <h3> Cake x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <div class="w-100"></div>
+            <article class="col-md">
+                <h3> Cake x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+
+            </article>
+            <article class="col-md">
+                <h3> Cake x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <article class="col-md">
+                <h3> Cake x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <div class="w-100"></div>
+        </div>
+
+        <!--Cookies Menu-->
+        <div class="row collapse" id="cookiesCollapse" aria-expanded="false">
+            <article class="col-md">
+                <h3> Cookie x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <article class="col-md">
+                <h3> Cookie x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <article class="col-md">
+                <h3> Cookie x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <div class="w-100"></div>
+            <article class="col-md">
+                <h3> Cookie x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+
+            </article>
+            <article class="col-md">
+                <h3> Cookie x</h3>
+                <p class="description">this is text this is text this is text this is text this is text</p>
+                <p class="price">$1.99ea</p>
+                <hr>
+            </article>
+            <article class="col-md">
+                <h3> Cookie x</h3>
                 <p class="description">this is text this is text this is text this is text this is text</p>
                 <p class="price">$1.99ea</p>
                 <hr>
@@ -100,6 +189,8 @@
 
 
     </main>
+
+
 
 
     <footer class="col-12 mx-auto bg-light my-4">
