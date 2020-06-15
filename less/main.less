@@ -1,16 +1,47 @@
 @import 'mixins';
-
-
-
 body {
-    background-image: url('../images/mainimage.png');
+  background-image: url('../images/mainimage.png');
 }
-
+h1 {
+  .header();
+}
+p {
+  .paragraph();
+}
 footer {
-    text-align: center;
-    height: 75px;
+  text-align: center;
+  height: 75px;
 }
-
+footer img {
+  width: 30px;
+  height: 30px;
+}
+nav ul li {
+  list-style: none;
+}
 .macaroons {
-    width: 100%;
+  width: 100%;
+}
+.btn-primary {
+  .header();
+  background-color: @lavender;
+  padding: .75rem .5rem;
+  border: none;
+  font-size: 1.5rem;
+}
+.btn-primary:focus, .btn-primary:active {
+  border: none;
+}
+.btn-primary:focus {
+  box-shadow: none;
+  background-color: @lavender;
+}
+.btn-primary:hover {
+  background-color: @pink;
+}
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: @pink !important;
+  border: none;
+  box-shadow: none !important;
+  outline: none;
 }
