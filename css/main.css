@@ -1,12 +1,1 @@
-body {
-    background-image: url('../images/mainimage.png');
-}
-
-footer {
-    text-align: center;
-    height: 75px;
-}
-
-.macaroons {
-    width: 100%;
-}
+body{background-image:url('../images/mainimage.png')}footer{text-align:center;height:75px}.macaroons{width:100%}
