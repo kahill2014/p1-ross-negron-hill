@@ -1,12 +1,25 @@
+.lailaregular {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
+}
 body {
-    background-image: url('../images/mainimage.png');
+  background-image: url('../images/mainimage.png');
 }
-
 footer {
-    text-align: center;
-    height: 75px;
+  text-align: center;
+  height: 75px;
 }
-
 .macaroons {
-    width: 100%;
+  width: 100%;
+}
+.navbar li {
+  list-style-type: none;
+}
+.navbar li a {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
 }
