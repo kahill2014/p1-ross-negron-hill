@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>About Us | The Great Gadsby</title>
@@ -9,27 +10,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Laila&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="../css/main.css" rel="stylesheet" />
-  </head>
-  <body>
-    <nav>
-      <!-- Navigation here -->
-    </nav>
-    <header>
-      <h1></h1>
-    </header>
-    <main>
-      <!-- Main content here -->
-    </main>
-    <footer>
-      <!-- Social media icons & footer here -->
-    </footer>
+</head>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	  <script type="text/javascript" src="../js/main.js"></script>
-  </body>
+
+
+
+<body>
+
+    <body>
+        <!-- Navigation here -->
+        <div class="mx-auto bg-light col-sm-8  py-0">
+            <!-- Navbar visible util smal screen sizes -->
+            <nav class="navbar-nav d-none d-sm-block d-sm-none d-md-block">
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">home</a></li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">  menu </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catering.html" class="nav-link">catering & events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <!-- Navbar with dropdown visible on small screen size - dropdown-->
+            <div class="navbar-nav d-block d-sm-none p-3 ">
+                <div class="dropdown ">
+                    <button class="btn btn-secondary dropdown-toggle d-block mx-auto btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Page Sections
+                  </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a href="../index.html" class="nav-link dropdown-item">home</a>
+                        <a href="#" class="nav-link active dropdown-item">  menu </a>
+                        <a href="catering.html" class="nav-link  dropdown-item">catering & events</a>
+                        <a href="contact.html" class="nav-link  dropdown-item">contact</a>
+                    </div>
+                </div>
+                </nav>
+            </div>
+        </div>
+
+        <!--
+        <header class="container col-11 mx-auto bg-light my-3 shadow p-3 bg-white rounded">
+            <h1 class=" mx-auto d-none d-sm-block d-sm-none d-md-block text-center menuhead">MENU</h1>
+            <img class="d-none d-sm-block d-md-none d-block d-sm-none macaroons" src="../images/macaroons.jpg" alt="macaroons">
+
+        </header>
+        -->
+
+        <!-- Large Container -->
+        <!--
+        <main class="container col-11 bg-light shadow p-3 mb-3 bg-white rounded">
+
+        </main>
+        -->
+
+
+        <div class="container">
+            <div class="row ">
+                <img src="../images/eclaires.jpg " class="img-fluid  col-md-4 w-100 rounded-lg bg-light p-3 mx-auto  " alt="Eclaires ">
+
+                <div class="col-sm-8 bg-light h-75 shadow-lg p-3 mb-5 bg-white rounded-20">
+                    <article>
+                        <h1>About Us</h1>
+                        <p>We are a family-run European Bakery located in Gilbert, AZ.
+                            <br> A family run European bakery for all of your special occasions - from celebration cakes to macarons, eclairs to pastries & everything in between.
+                            <br>
+                            <br> 1030 S Gilbert Road
+                            <br> Unit 101 Gilbert, Arizona
+                            <br>
+                            <br> Call (480) 244-4727
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="col-12 mx-auto mb-0 bg-light fixed-bottom d-inline p-3 ">
+
+            <img class="mx-2 " src="../images/facebook.png " alt="facebook ">
+            <img class="mx-2 " src="../images/instagram.png " alt="instagram ">
+            <img class="mx-2 " src="../images/twitter.png " alt="twitter ">
+            <img class="mx-2 " src="../images/youtube.png " alt="youtube ">
+
+        </footer>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+        <script type="text/javascript " src="../js/main.js "></script>
+    </body>
+
 </html>
