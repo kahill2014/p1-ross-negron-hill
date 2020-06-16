@@ -1,0 +1,55 @@
+  
+  /**** start navbar styling ****/
+  .lailaregular {
+    color: #3aa6ae;
+    font-size: 1.3em;
+    font-family: "Laila", sans-serif;
+    font-weight: bold;
+  }
+
+  .navbar li {
+    list-style-type: none;
+  }
+
+  .navbar li a {
+    color: #3aa6ae;
+    font-size: 1.3em;
+    font-family: "Laila", sans-serif;
+    font-weight: bold;
+  }
+   /**** end navbar styling ****/
+
+  /**** start background image ****/
+   body {
+    background-image: url('images/mainimage.png');
+  }
+  /**** end background image *****/
+
+  /**** start logo and cta styling ******/
+  main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding-top: 35%;
+  }
+
+  .circle_logo {
+      width: 80%;
+      padding-bottom: 4%;
+  }
+
+  .menu_btn {
+      width: 60%;
+  }
+  /**** end logo and cta styling ****/
+
+  /**** start footer styling ****/
+  footer {
+    text-align: center;
+    height: 75px;
+  }
+  /**** start footer styling ****/
+ 
+  =======
+  .header{font-family:'Laila';font-size:2.75rem;font-weight:500;margin:0}.paragraph{font-family:'Roboto';font-size:.9rem;font-weight:400}h1{font-family:'Laila';font-size:2.75rem;font-weight:500;margin:0}p{font-family:'Roboto';font-size:.9rem;font-weight:400}footer{text-align:center;height:75px}footer img{width:30px;height:30px}nav ul li{list-style:none}.macaroons{width:100%}.btn-primary{font-family:'Laila';font-size:2.75rem;font-weight:500;margin:0;background-color:#9b7fb1;padding:.75rem .5rem;border:none;font-size:1.5rem}.btn-primary:focus,.btn-primary:active{border:none}.btn-primary:focus{-webkit-box-shadow:none;box-shadow:none;background-color:#9b7fb1}.btn-primary:hover{background-color:#fa82a0}.btn-primary:not(:disabled):not(.disabled).active{background-color:#fa82a0 !important;border:none;-webkit-box-shadow:none !important;box-shadow:none !important;outline:none}
