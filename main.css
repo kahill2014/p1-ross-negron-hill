@@ -80,6 +80,26 @@
         padding-top: 3%;
     }
   }
-
   /**** end iPad/768px min width media query ****/
  
+  /**** start desktop/1024px min width media query ****/
+  @media (min-width: 1024px) {
+      .circle_logo {
+          width: 30%;
+      }
+
+      main {
+          padding-top: 8%;
+      }
+
+      footer {
+        height: 100px;
+    }
+
+    .mx-2 {
+      height: 80%;
+      padding-top: 1%;
+  }
+  }
+
+  /**** end desktop/1024px min width media query ****/
