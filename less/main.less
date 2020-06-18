@@ -68,8 +68,32 @@ nav ul li {
   padding-bottom: .5rem;
 }
 section {
-  margin: 3rem 0;
+  margin: 1rem 0;
 }
-section h2.col-sm-6 {
-  padding-left: 0;
+section h2 {
+  padding-bottom: 1rem;
+}
+figure {
+  background-color: @green;
+  padding: .25rem;
+  margin-top: 1rem;
+}
+figure img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+  transition: .2s;
+}
+figure figcaption {
+  padding: 1rem;
+  padding-top: 0;
+  .paragraph();
+  font-size: 1.5rem;
+  color: #fff;
+}
+.catering-tile:hover {
+  text-decoration: none;
+  figure img {
+    opacity: .8;
+  }
 }
