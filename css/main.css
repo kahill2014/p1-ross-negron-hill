@@ -69,6 +69,12 @@ nav ul li {
 .navbar li {
   list-style-type: none;
 }
+.navbar li a {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
+}
 .menuhead h1 {
   color: #3AA6AE;
 }
