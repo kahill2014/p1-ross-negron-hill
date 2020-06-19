@@ -57,25 +57,25 @@
       </header>
       <section>
         <div class="row col-sm-12">
-          <a class="col-sm-6 col-xs-12 catering-tile" href="#">
+          <a class="col-sm-6 col-xs-12 catering-tile" href="#" data-toggle="modal" data-target="#cater-modal">
             <figure>
               <img src="../images/birthday.jpg" alt="Birthday Cupcakes" />
               <figcaption class="text-center">Birthday</figcaption>
             </figure>
           </a>
-          <a class="col-sm-6 col-xs-12 catering-tile" href="#">
+          <a class="col-sm-6 col-xs-12 catering-tile" href="#" data-toggle="modal" data-target="#cater-modal">
             <figure>
               <img src="../images/graduation.jpg" alt="Graduation Cakes" />
               <figcaption class="text-center">Graduation</figcaption>
             </figure>
           </a>
-          <a class="col-sm-6 col-xs-12 catering-tile" href="#">
+          <a class="col-sm-6 col-xs-12 catering-tile" href="#" data-toggle="modal" data-target="#cater-modal">
             <figure>
               <img src="../images/business.jpg" alt="Fancy Strawberry-Topped Cupcakes" />
               <figcaption class="text-center">Business</figcaption>
             </figure>
           </a>
-          <a class="col-sm-6 col-xs-12 catering-tile" href="#">
+          <a class="col-sm-6 col-xs-12 catering-tile" href="#" data-toggle="modal" data-target="#cater-modal">
             <figure>
               <img src="../images/school.jpg" alt="Colorful Vanilla Cupcakes" />
               <figcaption class="text-center">School</figcaption>
@@ -87,6 +87,43 @@
     <footer>
       <!-- Social media icons & footer here -->
     </footer>
+
+    <!-- Modals -->
+    <div id="cater-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Let's cater your <span id="cater-modal-type">event</span>!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>We'll reach out with the next steps.</h4>
+            <label class="col-sm-4">Name:</label>
+              <input class="col-sm-5" type="text" />
+              <br />
+            <label class="col-sm-4">Email:</label>
+              <input class="col-sm-5" type="text" />
+              <br />
+            <label class="col-sm-4">Phone:</label>
+              <input class="col-sm-5" type="text" />
+              <br />
+            <label class="col-sm-4">Baked goods:</label>
+              <select class="col-sm-5">
+                <option>Cupcakes</option>
+                <option>Cakes</option>
+                <option>Macaroons</option>
+                <option>Pastries</option>
+              </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="cater-submit">Submit</button>
+            <button type="button" class="btn btn-primary" id="cater-ok">Got it!</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
