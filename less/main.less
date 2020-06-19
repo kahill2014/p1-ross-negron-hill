@@ -1,6 +1,11 @@
 @import 'mixins';
 body {
-  background-image: url('../images/mainimage.png');
+  background: url(../images/mainimage.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 5rem;
 }
 h1 {
   .header();
@@ -11,9 +16,11 @@ p {
 }
 footer {
   text-align: center;
-  height: 75px;
+  height: 3rem;
+  padding-bottom: 2rem;
 }
 footer img {
+  margin-top: -.5rem;
   width: 30px;
   height: 30px;
 }
@@ -45,6 +52,10 @@ nav ul li {
   border: none;
   box-shadow: none !important;
   outline: none;
+}
+.nav-parent {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .navbar li  {
     list-style-type: none;
@@ -137,3 +148,68 @@ select, option, input {
 #cater-ok {
   display: none;
 }
+
+
+/**** start navbar styling ****/
+.lailaregular {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
+.navbar li a {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
+}
+ /**** end navbar styling ****/
+/**** start logo and cta styling ******/
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 35%;
+}
+.circle_logo {
+    width: 80%;
+    padding-bottom: 4%;
+}
+.menu_btn {
+    width: 60%;
+}
+/**** end logo and cta styling ****/
+
+/**** start iPad/768px min width media query ****/
+@media (min-width: 768px) {
+
+  .navbar li a:hover, .navbar li a.active {
+     text-decoration: underline;
+     text-decoration-color: pink;
+    }
+
+  main {
+      padding-top: 2%;
+  }
+  .circle_logo {
+       width: 50%;
+    }
+}
+/**** end iPad/768px min width media query ****/
+
+/**** start desktop/1024px min width media query ****/
+@media (min-width: 1024px) {
+  .circle_logo {
+    width: 30%;
+  }
+  main {
+    padding-top: 8%;
+  }
+}
+/**** end desktop/1024px min width media query ****/
