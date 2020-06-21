@@ -37,3 +37,8 @@ $("textarea").keyup(function(){
     $("#chars-remaining").text(remaining);
   }
 });
+
+//
+$(".menu-buttons .menu-btn").click(function(){
+  $(".collapse.show").collapse('hide');
+});
