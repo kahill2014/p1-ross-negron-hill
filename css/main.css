@@ -69,6 +69,7 @@ nav ul li {
 }
 .btn-primary:focus,
 .btn-primary:active {
+  background-color: #fa82a0 !important;
   border: none;
 }
 .btn-primary:focus {
