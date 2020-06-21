@@ -250,13 +250,6 @@ main {
   .circle_logo {
     width: 50%;
   }
-  footer {
-    height: 100px;
-  }
-  .mx-2 {
-    height: 90%;
-    padding-top: 3%;
-  }
 }
 /**** end iPad/768px min width media query ****/
 /**** start desktop/1024px min width media query ****/
@@ -266,13 +259,6 @@ main {
   }
   main {
     padding-top: 8%;
-  }
-  footer {
-    height: 100px;
-  }
-  .mx-2 {
-    height: 80%;
-    padding-top: 1%;
   }
 }
 /**** end desktop/1024px min width media query ****/
