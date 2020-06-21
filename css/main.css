@@ -9,13 +9,25 @@
   font-size: .9rem;
   font-weight: 400;
 }
+.lailaregular {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
+}
 body {
-  background: url(../images/mainimage.png) no-repeat center center fixed;
+  background: url(../images/mainimage.PNG) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-bottom: 5rem;
+}
+body#home {
+  background: url(../images/mainimage.PNG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h1 {
   font-family: 'Laila';
@@ -173,13 +185,6 @@ textarea {
 #cater-ok {
   display: none;
 }
-/**** start navbar styling ****/
-.lailaregular {
-  color: #3aa6ae;
-  font-size: 1.3em;
-  font-family: "Laila", sans-serif;
-  font-weight: bold;
-}
 .navbar li {
   list-style-type: none;
 }
@@ -235,8 +240,7 @@ main {
 }
 /**** start iPad/768px min width media query ****/
 @media (min-width: 768px) {
-  .navbar li a:hover,
-  .navbar li a.active {
+  .navbar li a:hover {
     text-decoration: underline;
     text-decoration-color: pink;
   }
