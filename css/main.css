@@ -9,8 +9,25 @@
   font-size: .9rem;
   font-weight: 400;
 }
+.lailaregular {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
+}
 body {
-  background-image: url('../images/mainimage.png');
+  background: url(../images/mainimage.PNG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body#home {
+  background: url(../images/mainimage.PNG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h1 {
   font-family: 'Laila';
@@ -31,9 +48,6 @@ footer img {
   width: 30px;
   height: 30px;
 }
-nav ul li {
-  list-style: none;
-}
 .macaroons {
   width: 100%;
 }
@@ -52,8 +66,7 @@ nav ul li {
   border: none;
 }
 .btn-primary:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   background-color: #9b7fb1;
 }
 .btn-primary:hover {
@@ -62,18 +75,8 @@ nav ul li {
 .btn-primary:not(:disabled):not(.disabled).active {
   background-color: #fa82a0 !important;
   border: none;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  box-shadow: none !important;
   outline: none;
-}
-.navbar li {
-  list-style-type: none;
-}
-.navbar li a {
-  color: #3aa6ae;
-  font-size: 1.3em;
-  font-family: "Laila", sans-serif;
-  font-weight: bold;
 }
 .menuhead h1 {
   color: #3AA6AE;
@@ -81,3 +84,77 @@ nav ul li {
 .container h1 {
   color: #3aa6ae;
 }
+/**** start navbar styling ****/
+nav ul li {
+  list-style: none;
+}
+.navbar li a {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
+}
+/**** end navbar styling ****/
+/**** start logo and cta styling ******/
+#home main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.circle_logo {
+  width: 80%;
+  padding-bottom: 4%;
+}
+.menu_btn {
+  width: 60%;
+}
+/**** end logo and cta styling ****/
+/**** start footer styling ****/
+footer {
+  text-align: center;
+  height: 50px;
+  padding-bottom: 3%;
+}
+.mx-2 {
+  height: 200%;
+}
+/**** start footer styling ****/
+/**** start iPad/768px min width media query ****/
+@media (min-width: 768px) {
+  .navbar li a:hover {
+    text-decoration: underline;
+    text-decoration-color: pink;
+  }
+  main {
+    padding-top: 2%;
+  }
+  .circle_logo {
+    width: 50%;
+  }
+  footer {
+    height: 100px;
+  }
+  .mx-2 {
+    height: 90%;
+    padding-top: 3%;
+  }
+}
+/**** end iPad/768px min width media query ****/
+/**** start desktop/1024px min width media query ****/
+@media (min-width: 1024px) {
+  .circle_logo {
+    width: 30%;
+  }
+  main {
+    padding-top: 8%;
+  }
+  footer {
+    height: 100px;
+  }
+  .mx-2 {
+    height: 80%;
+    padding-top: 1%;
+  }
+}
+/**** end desktop/1024px min width media query ****/
