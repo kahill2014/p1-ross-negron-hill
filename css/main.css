@@ -63,9 +63,9 @@ nav ul li {
   font-weight: 500;
   margin: 0;
   background-color: #9b7fb1;
-  padding: .75rem .5rem;
+  padding: .75rem;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .btn-primary:focus,
 .btn-primary:active {
@@ -241,6 +241,13 @@ main {
   display: flex;
   align-self: flex-start;
   margin-top: 5px;
+}
+.dropdown-item {
+  text-align: center;
+  width: 100%;
+}
+.dropdown-toggle::after {
+  display: none;
 }
 /**** start iPad/768px min width media query ****/
 @media (min-width: 768px) {

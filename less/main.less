@@ -39,9 +39,9 @@ nav ul li {
 .btn-primary {
 	  .header();
 	  background-color: @lavender;
-	  padding: .75rem .5rem;
+	  padding: .75rem;
 	  border: none;
-	  font-size: 1.5rem;
+	  font-size: 1.25rem;
 }
 .btn-primary:focus, .btn-primary:active {
 	  border: none;
@@ -208,6 +208,13 @@ main {
   display: flex;
   align-self: flex-start;
   margin-top: 5px;
+}
+.dropdown-item {
+	text-align: center;
+	width: 100%;
+}
+.dropdown-toggle::after {
+	display: none;
 }
 
 /**** start iPad/768px min width media query ****/
