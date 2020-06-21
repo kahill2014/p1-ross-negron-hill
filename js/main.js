@@ -37,3 +37,7 @@ $("textarea").keyup(function(){
     $("#chars-remaining").text(remaining);
   }
 })
+
+var myParagraphs = document.querySelectorAll('p');
+
+      console.log(myParagraphs);
