@@ -1,4 +1,5 @@
 @import 'mixins';
+/**** Background images ****/
 body#home {
 		background: url(../images/home_bg.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
@@ -34,6 +35,30 @@ body#contact {
 		-o-background-size: cover;
 		background-size: cover;
 }
+
+/**** Semantic and high-level elements ****/
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 35%;
+	section {
+	  margin: 1rem 0;
+	  margin-left: 0 !important;
+		h2 {
+			.header();
+		  padding-bottom: .5rem;
+		}
+	}
+	.border-bottom {
+	  border-bottom: 1px solid #999;
+	  padding-bottom: .5rem;
+	}
+	.banner-img {
+		width: 100% !important;
+	}
+}
 h1 {
 	.header();
 	padding-top: .25rem;
@@ -46,18 +71,14 @@ footer {
   text-align: center;
   height: 3rem;
   padding-bottom: 2rem;
+	img {
+	  margin-top: -.5rem;
+	  width: 30px;
+	  height: 30px;
+	}
 }
-footer img {
-  margin-top: -.5rem;
-  width: 30px;
-  height: 30px;
-}
-nav ul li {
-  list-style: none;
-}
-.macaroons {
-	  width: 100%;
-}
+
+/**** Primary button ****/
 .btn-primary {
 	  .header();
 	  background-color: @lavender;
@@ -82,6 +103,76 @@ nav ul li {
 	  box-shadow: none !important;
 	  outline: none;
 }
+
+/**** Catering ****/
+figure {
+  background-color: @green;
+  padding: .25rem;
+  margin-top: 1rem;
+	img {
+	  max-width: 100%;
+	  max-height: 100%;
+	  padding: 1rem;
+	  transition: .2s;
+	}
+	figcaption {
+	  display: flex;
+	  width: 100%;
+	  justify-content: center;
+	  align-items: center;
+	  text-align: center;
+	  padding: 1rem;
+	  padding-top: 0;
+	  .paragraph();
+	  font-size: 1.5rem;
+	  color: #fff;
+	}
+	figcaption:before,
+	figcaption:after {
+	    content: '';
+	    border-top: 2px solid;
+	    margin: 0 20px 0 0;
+	    flex: 1 0 20px;
+	}
+	figcaption:after {
+	    margin: 0 0 0 20px;
+	}
+}
+.catering-tile:hover {
+  text-decoration: none;
+  figure img {
+    opacity: .8;
+  }
+}
+
+/**** Modals ****/
+.modal {
+	h4 {
+	  margin-bottom: 1rem;
+	  font-size: 1.2rem;
+	}
+	.btn-primary {
+	  font-size: 1rem;
+	  padding: 10px;
+	}
+	#cater-ok {
+	  display: none;
+	}
+}
+
+/**** Forms ****/
+select, input, textarea, option {
+  padding: 5px 0;
+  margin: .5rem 0;
+  border: 2px solid @pink;
+  border-radius: 5px;
+	color: @green;
+}
+select:focus, input:focus, textarea:focus {
+  outline-color: @green;
+}
+
+/**** Navigation ****/
 .nav-parent {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -92,127 +183,49 @@ nav ul li {
 .nav-mobile {
 	margin-right: -15px;
 }
-.navbar-nav .btn-secondary {
-	background-color: @green;
-	border: 1px solid @green;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
-}
-.navbar-nav .btn-secondary:hover, .navbar-nav .btn-secondary:focus, .navbar-nav .btn-secondary:active {
-	background-color: @lavender !important;
-	border: 1px solid @lavender;
-	box-shadow: none !important;
-}
-.navbar-nav .btn-secondary:focus, .navbar-nav .btn-secondary:active {
-	border: 1px solid @pink;
-}
-.navbar-nav h1 {
-	color: @green;
-	font-size: 2rem;
-	margin-top: 3px;
-}
-.navbar li  {
-    list-style-type: none;
-		a {
-		  .lailaregular();
+.navbar-nav {
+	.btn-secondary {
+		background-color: @green;
+		border: 1px solid @green;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+		background-color: @lavender !important;
+		box-shadow: none !important;
+	}
+	.btn-secondary:focus, .btn-secondary:active {
+		border: 1px solid @pink;
+	}
+	.btn-secondary:hover {
+		border: 1px solid @lavender;
+	}
+	h1 {
+		font-size: 2rem;
+		margin-top: 3px;
+	}
+	.navbar {
+		li {
+			list-style-type: none;
+			a {
+			  .lailaregular();
+			}
+			a.active {
+				text-decoration: underline;
+				text-decoration-color: @pink;
+			}
 		}
+	}
+	.dropdown-item {
+		text-align: center;
+		width: 100%;
+	}
+	.dropdown-toggle::after {
+		display: none;
+	}
 }
 
-.border-bottom {
-  border-bottom: 1px solid #999;
-  padding-bottom: .5rem;
-}
-section {
-  margin: 1rem 0;
-  margin-left: 0 !important;
-}
-section h2 {
-	.header();
-  padding-bottom: .5rem;
-}
-figure {
-  background-color: @green;
-  padding: .25rem;
-  margin-top: 1rem;
-}
-figure img {
-  max-width: 100%;
-  max-height: 100%;
-  padding: 1rem;
-  transition: .2s;
-}
-figure figcaption {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-  padding-top: 0;
-  .paragraph();
-  font-size: 1.5rem;
-  color: #fff;
-}
-figure figcaption:before,
-figure figcaption:after {
-    content: '';
-    border-top: 2px solid;
-    margin: 0 20px 0 0;
-    flex: 1 0 20px;
-}
-
-figure figcaption:after {
-    margin: 0 0 0 20px;
-}
-.catering-tile:hover {
-  text-decoration: none;
-  figure img {
-    opacity: .8;
-  }
-}
-.modal h4 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-.modal .btn-primary {
-  font-size: 1rem;
-  padding: 10px;
-}
-select, input, textarea {
-  padding: 5px 0;
-  margin: .5rem 0;
-  border: 2px solid @pink;
-  border-radius: 5px;
-}
-select:focus, input:focus, textarea:focus {
-  outline-color: @green;
-}
-select, option, input, textarea {
-  color: @green;
-}
-#cater-ok {
-  display: none;
-}
-
-.navbar li {
-  list-style-type: none;
-}
-.navbar li a {
-  .lailaregular();
-}
-.navbar li a.active {
-	text-decoration: underline;
-	text-decoration-color: @pink;
-}
- /**** end navbar styling ****/
-/**** start logo and cta styling ******/
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 35%;
-}
+/**** Logo ******/
 .circle_logo {
     width: 50%;
 		min-width: 300px;
@@ -220,7 +233,8 @@ main {
 .menu_btn {
     width: 60%;
 }
-/**** end logo and cta styling ****/
+
+/**** Contact ****/
 #contact-form {
   display: flex;
   flex: 1;
@@ -251,15 +265,8 @@ main {
 .form-group label {
 	padding-left: 0;
 }
-.dropdown-item {
-	text-align: center;
-	width: 100%;
-}
-.dropdown-toggle::after {
-	display: none;
-}
 
-/**** start iPad/768px min width media query ****/
+/**** Tablet media query ****/
 @media (min-width: 768px) {
 	.navbar li a:hover {
 			text-decoration: underline;
@@ -272,9 +279,8 @@ main {
 			width: 40%;
 	}
 }
-/**** end iPad/768px min width media query ****/
 
-/**** start desktop/1024px min width media query ****/
+/**** Desktop media query ****/
 @media (min-width: 1024px) {
 	.circle_logo {
 			max-width: 430px;
@@ -284,4 +290,3 @@ main {
 			padding-top: 8%;
 	}
 }
-/**** end desktop/1024px min width media query ****/
