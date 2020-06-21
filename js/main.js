@@ -36,8 +36,4 @@ $("textarea").keyup(function(){
     $("#excess-chars").hide();
     $("#chars-remaining").text(remaining);
   }
-})
-
-var myParagraphs = document.querySelectorAll('p');
-
-      console.log(myParagraphs);
+});
