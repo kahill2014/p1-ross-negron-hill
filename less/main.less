@@ -15,17 +15,23 @@ body#home {
 }
 h1 {
 	  .header();
+		padding-top: .25rem;
 }
 p {
 	  .paragraph();
 }
 footer {
-	  text-align: center;
-	  height: 75px;
+  text-align: center;
+  height: 3rem;
+  padding-bottom: 2rem;
 }
 footer img {
-	  width: 30px;
-	  height: 30px;
+  margin-top: -.5rem;
+  width: 30px;
+  height: 30px;
+}
+nav ul li {
+  list-style: none;
 }
 .macaroons {
 	  width: 100%;
@@ -53,80 +59,190 @@ footer img {
 	  box-shadow: none !important;
 	  outline: none;
 }
+.nav-parent {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.navbar li  {
+    list-style-type: none;
+
+}
+.navbar li a {
+  color: #3aa6ae;
+  font-size: 1.3em;
+  font-family: "Laila", sans-serif;
+  font-weight: bold;
+}
 .menuhead h1 {
 	color: #3AA6AE;
 }
 .container h1 {
   color: @green;
-}  
-/**** start navbar styling ****/
-nav ul li {
-  	list-style: none;
 }
+
+.border-bottom {
+  border-bottom: 1px solid #999;
+  padding-bottom: .5rem;
+}
+section {
+  margin: 1rem 0;
+  margin-left: 0 !important;
+}
+section h2 {
+  padding-bottom: 1rem;
+}
+figure {
+  background-color: @green;
+  padding: .25rem;
+  margin-top: 1rem;
+}
+figure img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 1rem;
+  transition: .2s;
+}
+figure figcaption {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 0;
+  .paragraph();
+  font-size: 1.5rem;
+  color: #fff;
+}
+figure figcaption:before,
+figure figcaption:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+figure figcaption:after {
+    margin: 0 0 0 20px;
+}
+.catering-tile:hover {
+  text-decoration: none;
+  figure img {
+    opacity: .8;
+  }
+}
+.modal h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.modal .btn-primary {
+  font-size: 1rem;
+  padding: 10px;
+}
+select, input, textarea {
+  padding: 5px 0;
+  margin: .5rem 0;
+  border: 2px solid @pink;
+  border-radius: 5px;
+}
+select:focus, input:focus, textarea:focus {
+  outline-color: @green;
+}
+select, option, input, textarea {
+  color: @green;
+}
+#cater-ok {
+  display: none;
+}
+
+.navbar li {
+  list-style-type: none;
+}
+
 .navbar li a {
-		.lailaregular();
+  .lailaregular();
 }
  /**** end navbar styling ****/
 /**** start logo and cta styling ******/
-#home main {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		text-align: center;
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 35%;
 }
 .circle_logo {
-		width: 80%;
-		padding-bottom: 4%;
+    width: 80%;
+    padding-bottom: 4%;
 }
 .menu_btn {
-		width: 60%;
+    width: 60%;
 }
 /**** end logo and cta styling ****/
-/**** start footer styling ****/
-footer {
-		text-align: center;
-		height: 50px;
-		padding-bottom: 3%;
+#contact-form {
+  display: flex;
+  flex: 1;
+  flex-basis: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
 }
-.mx-2 {
-		height: 200%;
+#contact-form .form-group {
+  align-items: center;
 }
-/**** start footer styling ****/
+#contact-form .form-group p {
+  text-align: right;
+  font-size: .85rem;
+}
+#contact-form .form-group button {
+  display: block;
+  float: right;
+}
+#contact-form .form-group p.text-danger {
+  display: none;
+}
+#contact-form .form-group #message {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
 /**** start iPad/768px min width media query ****/
 @media (min-width: 768px) {
-		.navbar li a:hover {
-			 	text-decoration: underline;
-			 	text-decoration-color: pink;
-			}
-		main {
-				padding-top: 2%;
+	.navbar li a:hover {
+			text-decoration: underline;
+			text-decoration-color: pink;
 		}
-		.circle_logo {
-			 	width: 50%;
-		}
-		footer {
-				height: 100px;
-		}
-		.mx-2 {
-				height: 90%;
-				padding-top: 3%;
-		}
+	main {
+			padding-top: 2%;
+	}
+	.circle_logo {
+			width: 50%;
+	}
+	footer {
+			height: 100px;
+	}
+	.mx-2 {
+			height: 90%;
+			padding-top: 3%;
+	}
 }
 /**** end iPad/768px min width media query ****/
+
 /**** start desktop/1024px min width media query ****/
 @media (min-width: 1024px) {
-		.circle_logo {
-				width: 30%;
-		}
-		main {
-				padding-top: 8%;
-		}
-		footer {
-				height: 100px;
-		}
-		.mx-2 {
-				height: 80%;
-				padding-top: 1%;
-		}
+	.circle_logo {
+			width: 30%;
+	}
+	main {
+			padding-top: 8%;
+	}
+	footer {
+			height: 100px;
+	}
+	.mx-2 {
+			height: 80%;
+			padding-top: 1%;
+	}
 }
 /**** end desktop/1024px min width media query ****/

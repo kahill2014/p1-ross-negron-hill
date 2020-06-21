@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Navigation here -->
-    <div class="mx-auto bg-light col-sm-8  py-0">
+    <div class="mx-auto bg-light col-sm-8 py-0 nav-parent">
         <!-- Navbar visible until small screen sizes -->
         <nav class="navbar-nav d-none d-sm-block d-sm-none d-md-block">
           <ul class="navbar">
@@ -51,15 +51,80 @@
             </nav>
         </div>
     </div>
-    <header>
-      <h1></h1>
-    </header>
-    <main>
-      <!-- Main content here -->
+    <main class="container col-sm-8 mx-auto bg-light my-3 shadow p-3 bg-white rounded">
+      <header class="border-bottom">
+          <h1 class=" mx-auto d-none d-sm-block d-sm-none d-md-block text-center menuhead">CATERING & EVENTS</h1>
+      </header>
+      <section class="row col-sm-12">
+        <a class="col-sm-6 col-xs-12 catering-tile" href="#" data-toggle="modal" data-target="#cater-modal">
+          <figure>
+            <img src="../images/birthday.jpg" alt="Birthday Cupcakes" />
+            <figcaption class="text-center">Birthday</figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-xs-12 catering-tile" href="#" data-toggle="modal" data-target="#cater-modal">
+          <figure>
+            <img src="../images/graduation.jpg" alt="Graduation Cakes" />
+            <figcaption class="text-center">Graduation</figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-xs-12 catering-tile" href="#" data-toggle="modal" data-target="#cater-modal">
+          <figure>
+            <img src="../images/business.jpg" alt="Fancy Strawberry-Topped Cupcakes" />
+            <figcaption class="text-center">Business</figcaption>
+          </figure>
+        </a>
+        <a class="col-sm-6 col-xs-12 catering-tile" href="#" data-toggle="modal" data-target="#cater-modal">
+          <figure>
+            <img src="../images/school.jpg" alt="Colorful Vanilla Cupcakes" />
+            <figcaption class="text-center">School</figcaption>
+          </figure>
+        </a>
+      </section>
     </main>
-    <footer>
-      <!-- Social media icons & footer here -->
-    </footer>
+    <footer class="col-12 mx-auto mb-0 bg-light fixed-bottom d-inline p-3">
+			<a href="#"><img class="mx-2 " src="../images/facebook.png" alt="facebook"></a>
+			<a href="#"><img class="mx-2" src="../images/instagram.png" alt="instagram"></a>
+			<a href="#"><img class="mx-2" src="../images/twitter.png" alt="twitter"></a>
+			<a href="#"><img class="mx-2" src="../images/youtube.png" alt="youtube"></a>
+		</footer>
+
+    <!-- Modals -->
+    <div id="cater-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Let's cater your <span id="cater-modal-type">event</span>!</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h4>We'll reach out with the next steps.</h4>
+            <label class="col-sm-4">Name:</label>
+              <input class="col-sm-5" type="text" />
+              <br />
+            <label class="col-sm-4">Email:</label>
+              <input class="col-sm-5" type="text" />
+              <br />
+            <label class="col-sm-4">Phone:</label>
+              <input class="col-sm-5" type="text" />
+              <br />
+            <label class="col-sm-4">Baked goods:</label>
+              <select class="col-sm-5">
+                <option>Cupcakes</option>
+                <option>Cakes</option>
+                <option>Macaroons</option>
+                <option>Pastries</option>
+              </select>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="cater-submit">Submit</button>
+            <button type="button" class="btn btn-primary" id="cater-ok">Got it!</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
