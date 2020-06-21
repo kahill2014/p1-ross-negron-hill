@@ -194,6 +194,10 @@ textarea {
   font-family: "Laila", sans-serif;
   font-weight: bold;
 }
+.navbar li a.active {
+  text-decoration: underline;
+  text-decoration-color: #fa82a0;
+}
 /**** end navbar styling ****/
 /**** start logo and cta styling ******/
 main {
@@ -242,7 +246,7 @@ main {
 @media (min-width: 768px) {
   .navbar li a:hover {
     text-decoration: underline;
-    text-decoration-color: pink;
+    text-decoration-color: #fa82a0;
   }
   main {
     padding-top: 2%;

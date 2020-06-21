@@ -158,9 +158,12 @@ select, option, input, textarea {
 .navbar li {
   list-style-type: none;
 }
-
 .navbar li a {
   .lailaregular();
+}
+.navbar li a.active {
+	text-decoration: underline;
+	text-decoration-color: @pink;
 }
  /**** end navbar styling ****/
 /**** start logo and cta styling ******/
@@ -211,7 +214,7 @@ main {
 @media (min-width: 768px) {
 	.navbar li a:hover {
 			text-decoration: underline;
-			text-decoration-color: pink;
+			text-decoration-color: @pink;
 		}
 	main {
 			padding-top: 2%;
