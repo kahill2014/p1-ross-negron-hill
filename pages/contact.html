@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Navigation here -->
-    <div class="mx-auto bg-light col-sm-8  py-0">
+    <div class="mx-auto bg-light col-sm-8 py-0 nav-parent">
         <!-- Navbar visible until small screen sizes -->
         <nav class="navbar-nav d-none d-sm-block d-sm-none d-md-block">
           <ul class="navbar">
@@ -43,7 +43,7 @@
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a href="../index.html" class="nav-link dropdown-item">home</a>
                     <a href="menu.html" class="nav-link dropdown-item">menu</a>
-                    <a href="catering.html" class="nav-link  dropdown-item">catering & events</a>
+                    <a href="catering.html" class="nav-link dropdown-item">catering & events</a>
                     <a href="about.html" class="nav-link dropdown-item">about</a>
                     <a href="contact.html" class="nav-link dropdown-item active">contact</a>
                 </div>
@@ -53,21 +53,57 @@
     </div>
     <main class="container col-sm-8 mx-auto bg-light my-3 shadow p-3 bg-white rounded">
       <header class="border-bottom">
-          <h1 class=" mx-auto d-none d-sm-block d-sm-none d-md-block text-center menuhead">CONTACT US</h1>
+        <h1 class=" mx-auto d-none d-sm-block d-sm-none d-md-block text-center menuhead">CATERING & EVENTS</h1>
       </header>
-      <section>
-        <h2 class="col-sm-6 border-bottom">Catering</h2>
-      </section>
-      <section>
-        <h2 class="col-sm-6 border-bottom">Events</h2>
+      <section id="contact-form">
+        <div class="form-group row col-md-12">
+          <label class="col-lg-2 offset-lg-2 col-md-12 offset-md-0">Name: </label>
+          <input class="col-lg-4 col-md-12" type="text" />
+        </div>
+        <div class="form-group row col-md-12">
+          <label class="col-lg-2 offset-lg-2 col-md-12 offset-md-0">Email: </label>
+          <input class="col-lg-4 col-md-12" type="text" />
+        </div>
+        <div class="form-group row col-md-12">
+          <label class="col-lg-2 offset-lg-2 col-md-12 offset-md-0">Phone: </label>
+          <input class="col-lg-4 col-md-12" type="text" />
+        </div>
+        <div class="form-group row col-md-12">
+          <label id="message" class="col-lg-2 offset-lg-2 col-md-12 offset-md-0">Message: </label>
+          <textarea rows="5" class="col-lg-8 col-md-12" placeholder="We would love to hear from you!"></textarea>
+          <p class="col-md-12">Remaining characters: <span id="chars-remaining">255</span></p>
+          <p class="col-md-12 text-danger" id="excess-chars">You have exceeded the character limit.</p>
+        </div>
+        <div class="form-group row col-md-12 d-flex justify-content-end">
+          <button type="button" class="btn btn-primary" id="contact-submit" data-toggle="modal" data-target="#contact-modal">Submit</button>
+        </div>
       </section>
     </main>
     <footer class="col-12 mx-auto mb-0 bg-light fixed-bottom d-inline p-3">
-			<img class="mx-2 " src="images/facebook.png" alt="facebook">
-			<img class="mx-2" src="images/instagram.png" alt="instagram">
-			<img class="mx-2" src="images/twitter.png" alt="twitter">
-			<img class="mx-2" src="images/youtube.png" alt="youtube">
+			<a href="#"><img class="mx-2 " src="../images/facebook.png" alt="facebook"></a>
+			<a href="#"><img class="mx-2" src="../images/instagram.png" alt="instagram"></a>
+			<a href="#"><img class="mx-2" src="../images/twitter.png" alt="twitter"></a>
+			<a href="#"><img class="mx-2" src="../images/youtube.png" alt="youtube"></a>
 		</footer>
+
+    <div id="contact-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Thanks for your submission!</h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>We will reach out to you shortly.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="contact-ok">Got it!</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

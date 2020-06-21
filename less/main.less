@@ -133,16 +133,16 @@ figure figcaption:after {
   font-size: 1rem;
   padding: 10px;
 }
-select, input {
+select, input, textarea {
   padding: 5px 0;
   margin: .5rem 0;
   border: 2px solid @pink;
   border-radius: 5px;
 }
-select:focus, input:focus {
+select:focus, input:focus, textarea:focus {
   outline-color: @green;
 }
-select, option, input {
+select, option, input, textarea {
   color: @green;
 }
 #cater-ok {
@@ -185,6 +185,33 @@ main {
     width: 60%;
 }
 /**** end logo and cta styling ****/
+#contact-form {
+  display: flex;
+  flex: 1;
+  flex-basis: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: left;
+}
+#contact-form .form-group {
+  align-items: center;
+}
+#contact-form .form-group p {
+  text-align: right;
+  font-size: .85rem;
+}
+#contact-form .form-group button {
+  display: block;
+  float: right;
+}
+#contact-form .form-group p.text-danger {
+  display: none;
+}
+#contact-form .form-group #message {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 5px;
+}
 
 /**** start iPad/768px min width media query ****/
 @media (min-width: 768px) {
