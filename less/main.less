@@ -1,13 +1,34 @@
 @import 'mixins';
-body {
-		background: url(../images/mainimage.PNG) no-repeat center center fixed;
+body#home {
+		background: url(../images/home_bg.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
 }
-body#home {
-		background: url(../images/mainimage.PNG) no-repeat center center fixed;
+body#menu {
+		background: url(../images/menu_bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+body#catering {
+		background: url(../images/catering_bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+body#about {
+		background: url(../images/about_bg.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+body#contact {
+		background: url(../images/contact_bg.jpg) no-repeat center center fixed;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
@@ -16,6 +37,7 @@ body#home {
 h1 {
 	.header();
 	padding-top: .25rem;
+	color: @green;
 }
 p {
 	.paragraph();
@@ -64,6 +86,9 @@ nav ul li {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.nav-parent.bg-light, footer.bg-light {
+	background-color: rgba(255,255,255,.9) !important;
+}
 .nav-mobile {
 	margin-right: -15px;
 }
@@ -88,19 +113,9 @@ nav ul li {
 }
 .navbar li  {
     list-style-type: none;
-
-}
-.navbar li a {
-  color: #3aa6ae;
-  font-size: 1.3em;
-  font-family: "Laila", sans-serif;
-  font-weight: bold;
-}
-.menuhead h1 {
-	color: #3AA6AE;
-}
-.container h1 {
-  color: @green;
+		a {
+		  .lailaregular();
+		}
 }
 
 .border-bottom {
@@ -199,8 +214,8 @@ main {
     padding-top: 35%;
 }
 .circle_logo {
-    width: 80%;
-    padding-bottom: 4%;
+    width: 50%;
+		min-width: 300px;
 }
 .menu_btn {
     width: 60%;
@@ -254,7 +269,7 @@ main {
 			padding-top: 2%;
 	}
 	.circle_logo {
-			width: 50%;
+			width: 40%;
 	}
 }
 /**** end iPad/768px min width media query ****/
