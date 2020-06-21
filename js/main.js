@@ -36,4 +36,9 @@ $("textarea").keyup(function(){
     $("#excess-chars").hide();
     $("#chars-remaining").text(remaining);
   }
-})
+});
+
+//
+$(".menu-buttons .menu-btn").click(function(){
+  $(".collapse.show").collapse('hide');
+});

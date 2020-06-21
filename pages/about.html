@@ -1,113 +1,86 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>About Us | The Great Gadsby</title>
-    <meta name="description" content="---ENTER DESCRIPTION HERE---">
+    <meta name="description" content="We want to help you get to know us before you enjoy our products.">
 
     <link href="https://fonts.googleapis.com/css2?family=Laila&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/95512e3722.js" crossorigin="anonymous"></script>
     <link href="../css/main.css" rel="stylesheet" />
-</head>
-<body>
-    <body>
-        <!-- Navigation here -->
-        <div class="mx-auto bg-light col-sm-8  py-0">
-            <!-- Navbar visible util smal screen sizes -->
-            <nav class="navbar-nav d-none d-sm-block d-sm-none d-md-block">
-                <ul class="navbar">
-                    <li class="nav-item">
-                        <a href="../index.html" class="nav-link">home</a></li>
-                    <li class="nav-item">
-                        <a href="menu.html" class="nav-link">  menu </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="catering.html" class="nav-link">catering & events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link active">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-
-
-            <!-- Navbar with dropdown visible on small screen size - dropdown-->
-            <div class="navbar-nav d-block d-sm-none p-3 ">
-                <div class="dropdown ">
-                    <button class="btn btn-secondary dropdown-toggle d-block mx-auto btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Page Sections
-                  </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a href="../index.html" class="nav-link dropdown-item">home</a>
-                        <a href="#" class="nav-link active dropdown-item">menu</a>
-                        <a href="catering.html" class="nav-link dropdown-item">catering & events</a>
-                        <a href="contact.html" class="nav-link dropdown-item">contact</a>
-                    </div>
-                </div>
-                </nav>
+  </head>
+  <body id="about">
+    <!-- Navigation -->
+    <div class="mx-auto bg-light col-sm-8 py-0 nav-parent">
+        <!-- Navbar visible until small screen sizes -->
+        <nav class="navbar-nav d-none d-md-none d-md-block">
+          <ul class="navbar">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">home</a>
+            <li class="nav-item">
+              <a href="menu.html" class="nav-link">menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="catering.html" class="nav-link">catering & events</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link active">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Navbar with dropdown visible on small screen size - dropdown -->
+        <nav class="navbar-nav d-block d-md-none nav-mobile">
+          <div class="dropdown d-flex justify-content-between">
+            <h1 class="d-block d-md-none menuhead">ABOUT US</h1>
+            <button class="btn btn-secondary dropdown-toggle d-block btn-lg" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+              <a href="../index.html" class="nav-link dropdown-item">Home</a>
+              <a href="menu.html" class="nav-link dropdown-item">Menu</a>
+              <a href="catering.html" class="nav-link dropdown-item">Catering & Events</a>
+              <a href="contact.html" class="nav-link dropdown-item">Contact</a>
             </div>
-        </div>
+          </div>
+        </nav>
+    </div>
+    <main class="container col-sm-8 mx-auto bg-light my-3 shadow p-3 bg-white rounded">
+      <header class="border-bottom">
+        <h1 class=" mx-auto d-none d-md-block text-center menuhead">ABOUT US</h1>
+        <img class="d-none d-sm-block d-block d-lg-none banner-img" src="../images/macaroons.jpg" alt="macaroons">
+      </header>
+      <section class="row col-sm-12 d-flex align-items-center flex-wrap text-left">
+          <img src="../images/eclaires.jpg " class="col-md-5 w-100 rounded-lg bg-light p-3 mx-1 d-sm-none d-none d-lg-block" alt="Eclaires ">
+          <div class="col-12 col-lg-6 bg-light h-75 p-3 mb-5 bg-white rounded">
+            <h2>Who are we?</h2>
+              <p>A family run European bakery for all of your special occasions - from celebration cakes to macaroons, eclairs to pastries & everything in between.</p>
+            <h2>How can you reach us?</h2>
+              <p>1030 S Gilbert Road<br />
+              Unit 101 Gilbert, Arizona<br />
+              Call: <a href="#">(480) 244-4727</a><br />
+              Email: <a href="mailto:greatgadsby@bakery.com">greatgadsby@bakery.com</a></p>
+              <a href="contact.html" class="btn btn-primary">Contact Us</a>
+          </div>
+      </section>
+    </main>
+    <footer class="col-12 mx-auto mb-0 bg-light fixed-bottom d-inline p-3">
+			<a href="#"><img class="mx-2 " src="../images/facebook.png" alt="facebook"></a>
+			<a href="#"><img class="mx-2" src="../images/instagram.png" alt="instagram"></a>
+			<a href="#"><img class="mx-2" src="../images/twitter.png" alt="twitter"></a>
+			<a href="#"><img class="mx-2" src="../images/youtube.png" alt="youtube"></a>
+		</footer>
 
-        <!--
-        <header class="container col-11 mx-auto bg-light my-3 shadow p-3 bg-white rounded">
-            <h1 class=" mx-auto d-none d-sm-block d-sm-none d-md-block text-center menuhead">MENU</h1>
-            <img class="d-none d-sm-block d-md-none d-block d-sm-none macaroons" src="../images/macaroons.jpg" alt="macaroons">
-
-        </header>
-        -->
-
-        <!-- Large Container -->
-        <!--
-        <main class="container col-11 bg-light shadow p-3 mb-3 bg-white rounded">
-
-        </main>
-        -->
-
-
-        <div class="container">
-            <div class="row ">
-                <img src="../images/eclaires.jpg " class="img-fluid  col-md-4 w-100 rounded-lg bg-light p-3 mx-1  " alt="Eclaires ">
-
-                <div class="col-sm-7 bg-light h-75 shadow p-3 mb-5 bg-white rounded">
-                    <article>
-                        <h1>About Us</h1>
-                        <p>We are a family-run European Bakery located in Gilbert, AZ.
-                            <br> A family run European bakery for all of your special occasions - from celebration cakes to macarons, eclairs to pastries & everything in between.
-                            <br>
-                            <br> 1030 S Gilbert Road
-                            <br> Unit 101 Gilbert, Arizona
-                            <br>
-                            <br> Call (480) 244-4727
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </div>
-
-
-
-        <footer class="col-12 mx-auto mb-0 bg-light fixed-bottom d-inline p-3 ">
-
-            <img class="mx-2 " src="../images/facebook.png " alt="facebook ">
-            <img class="mx-2 " src="../images/instagram.png " alt="instagram ">
-            <img class="mx-2 " src="../images/twitter.png " alt="twitter ">
-            <img class="mx-2 " src="../images/youtube.png " alt="youtube ">
-
-        </footer>
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
-        <script type="text/javascript " src="../js/main.js "></script>
-    </body>
-
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <script type="text/javascript " src="../js/main.js "></script>
+  </body>
 </html>
