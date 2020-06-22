@@ -38,7 +38,7 @@ $("textarea").keyup(function(){
   }
 });
 
-//
+// Hide other menu tabs when one is clicked
 $(".menu-buttons .menu-btn").click(function(){
   $(".collapse.show").collapse('hide');
 });
